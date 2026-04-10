@@ -41,7 +41,7 @@ The following alert (Fig 5) comes in 7 minutese after the first one and appears 
 
 *Figure 5: SOC Alert: GET Requests to ASPX File with Query Parameters*
 
-Fig.6 shows some of the commands that were run using the web shell in the url.path, these results indicate a **breach** and should be escalated!
+Figure 6 shows some of the commands that were run using the web shell in the url.path, these results indicate a **breach** and should be escalated!
 
 <img width="1452" height="629" alt="image" src="https://github.com/user-attachments/assets/d4bb3283-17e3-41d5-8f6c-3674b92042b3" />
 
@@ -51,11 +51,16 @@ Fig.6 shows some of the commands that were run using the web shell in the url.pa
 
 <details>
   <summary><b>Uncovering Account Activity</b></summary>
+
+  Suspicious network activity has been identified and now it is time to pivot to host-base evidecnnce to identufy if the attacker has progressed. Figure 7 shows that the **Admininistrator** accound has accessed the server outside of regular business hours, thus this should be investigated.
+  
   <img width="624" height="265" alt="image" src="https://github.com/user-attachments/assets/f476750e-18e6-4d67-b8ef-bd894979ad79" />
   
 *Figure 7: SOC Alert: Administrator Access Outside of Business Hours*
 
 <img width="617" height="244" alt="image" src="https://github.com/user-attachments/assets/00e9de89-9f30-42d3-978b-4d31152b6a1d" />
+
+<img width="1456" height="348" alt="image" src="https://github.com/user-attachments/assets/78c5e409-97c5-47bd-8ba2-114d4bafc3be" />
 
 
 </details>
