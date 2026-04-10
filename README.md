@@ -35,9 +35,17 @@ The first goal is to visualize all web requests from the IP address. Figure 2 sh
 
 *Figure 4: user-agent*
 
+The following alert (Fig 5) comes in 7 minutese after the first one and appears suspicious because the **cmd=** parameter is a hallmakr of web shell activity. This alert will be investigated to identify whether or not it is a True Positive.
+
 <img width="626" height="253" alt="image" src="https://github.com/user-attachments/assets/d86d8ea0-6ba5-46e3-a7a0-a33fbbed9f66" />
 
 *Figure 5: SOC Alert: GET Requests to ASPX File with Query Parameters*
+
+Fig.6 shows some of the commands that were run using the web shell in the url.path.
+
+<img width="1452" height="629" alt="image" src="https://github.com/user-attachments/assets/d4bb3283-17e3-41d5-8f6c-3674b92042b3" />
+
+*Figure 6: SOC Alert: url.path showing commands*
 
 </details>
 
