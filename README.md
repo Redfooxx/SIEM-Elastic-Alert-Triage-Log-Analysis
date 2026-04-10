@@ -51,8 +51,9 @@ Fig.6 shows some of the commands that were run using the web shell in the url.pa
 
 <details>
   <summary><b>Uncovering Account Activity</b></summary>
+  <img width="624" height="265" alt="image" src="https://github.com/user-attachments/assets/f476750e-18e6-4d67-b8ef-bd894979ad79" />
   
-![image](https://github.com/user-attachments/assets/6575376c-19e0-4c1d-82cb-dafb87c154c2)
+*Figure 7: SOC Alert: url.path showing commands*
 
 </details>
 
