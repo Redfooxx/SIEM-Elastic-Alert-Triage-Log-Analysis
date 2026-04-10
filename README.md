@@ -8,6 +8,7 @@ Analyze logs in Elastic to investigate alerts and identify potential threats.
 <img width="975" height="243" alt="image" src="https://github.com/user-attachments/assets/4ca52e4e-b0e0-4419-8af6-20da7fe27fae" />
 *Figure 1: SOC Dashboard*
 
+
 </details>
 
 <details>
