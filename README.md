@@ -1,4 +1,5 @@
-# SIEM-Elastic: Alert Triage and Log Analysis
+# SIEM-Elastic: Alert Triage and Log Analysis &nbsp;&nbsp; <img width="80" height="80" alt="elastic logo" src="https://github.com/user-attachments/assets/3daa5922-d257-4a0e-b376-0e9dfb06b8eb" />
+
 Analyze logs in Elastic to investigate alerts and identify potential threats.
 
 <details>
