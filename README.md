@@ -73,6 +73,8 @@ Figure 9 (below) furter shows the Administrator logon that triggered a normal Wi
 
 <img width="617" height="244" alt="image" src="https://github.com/user-attachments/assets/00e9de89-9f30-42d3-978b-4d31152b6a1d" />
 
+*Figure 10: SOC Alert: New User Account Created*
+
 </details>
 
 <details>
