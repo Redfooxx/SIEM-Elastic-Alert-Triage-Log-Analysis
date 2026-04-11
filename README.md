@@ -52,16 +52,25 @@ Figure 6 shows some of the commands that were run using the web shell in the url
 <details>
   <summary><b>Uncovering Account Activity</b></summary>
 
-  Suspicious network activity has been identified and now it is time to pivot to host-base evidecnnce to identufy if the attacker has progressed. Figure 7 shows that the **Admininistrator** accound has accessed the server outside of regular business hours, thus this should be investigated.
+Suspicious network activity has been identified and now it is time to pivot to host-base evidecnnce to identufy if the attacker has progressed. Figure 7 shows that the **Admininistrator** accound has accessed the server outside of regular business hours, thus this should be investigated.
   
   <img width="624" height="265" alt="image" src="https://github.com/user-attachments/assets/f476750e-18e6-4d67-b8ef-bd894979ad79" />
   
 *Figure 7: SOC Alert: Administrator Access Outside of Business Hours*
 
-<img width="617" height="244" alt="image" src="https://github.com/user-attachments/assets/00e9de89-9f30-42d3-978b-4d31152b6a1d" />
+I focused the search based on the time of the event, Windows Security Even ID **4624** (Logon), client's hostname and the Administrator user.
 
 <img width="1456" height="348" alt="image" src="https://github.com/user-attachments/assets/78c5e409-97c5-47bd-8ba2-114d4bafc3be" />
 
+*Figure 8: winlog.logon.type showing attacker accessed the system remotely*
+
+Figure 9 (below) furter shows the Administrator logon that triggered a normal Windows session initialization process chain, which can be verified using the provided query. The two queries confirmed that the logon took place, but the current evidence isn’t sufficient to determine whether the activity is malicious.
+
+<img width="1454" height="586" alt="image" src="https://github.com/user-attachments/assets/2a9ad003-0673-4138-b1e9-f51b9bb74b10" />
+
+*Figure 9: Administrator's process.command_line*
+
+<img width="617" height="244" alt="image" src="https://github.com/user-attachments/assets/00e9de89-9f30-42d3-978b-4d31152b6a1d" />
 
 </details>
 
