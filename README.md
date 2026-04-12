@@ -7,7 +7,7 @@ Analyze logs in Elastic to investigate alerts and identify potential threats.
   
 This project simulates a real-life incident response scenario where I acted as an on-call SOC analyst for a Managed Service Provider (MSP). Using Elastic (Kibana), I performed high-pressure alert triage and investigated multiple security triggers originating from a client’s Windows and IIS servers.
 
-I began by reviewing the SOC Dashboard (Fig. 1), which displayed several high-severity alerts, including Web Requests Indicating File Upload and New User Account Created. The presence of **"Unusual Command-Line Behavior"** indicated a high probability of a successful system compromise.
+I began by reviewing the SOC Dashboard (Fig. 1), which displayed several high-severity alerts, including **Web Requests Indicating File Upload** and **New User Account Created**. The presence of **"Unusual Command-Line Behavior"** indicated a high probability of a successful system compromise.
 
 <img width="1119" height="273" alt="image" src="https://github.com/user-attachments/assets/d3811a74-e83f-460e-8caf-523cbf04defc" />
 
@@ -65,11 +65,13 @@ I focused the search based on the time of the event, Windows Security Even ID **
 
 *Figure 8: winlog.logon.type showing attacker accessed the system remotely*
 
-Figure 9 (below) further shows the Administrator logon that triggered a normal Windows session initialization process chain, which can be verified using the provided query. The two queries confirmed that the logon took place, but the current evidence isn’t sufficient to determine whether the activity is malicious.
+Figure 9 (below) further shows the Administrator logon that triggered a normal Windows session initialization process chain, which can be verified in the dashboard. The two queries confirmed that the logon took place, but the current evidence isn’t sufficient to determine whether the activity is malicious.
 
 <img width="1454" height="586" alt="image" src="https://github.com/user-attachments/assets/2a9ad003-0673-4138-b1e9-f51b9bb74b10" />
 
 *Figure 9: Administrator's process.command_line*
+
+The next critical alert in Fig. 10 (below) shows that the Administrator created a new user account, which is suspicious and warrants further investigation.
 
 <img width="617" height="244" alt="image" src="https://github.com/user-attachments/assets/00e9de89-9f30-42d3-978b-4d31152b6a1d" />
 
