@@ -77,6 +77,10 @@ The next critical alert in Fig. 10 (below) shows that the Administrator created 
 
 *Figure 10: SOC Alert: New User Account Created*
 
+<img width="1450" height="562" alt="image" src="https://github.com/user-attachments/assets/6817adc1-7a32-47e8-89a6-eb0737181517" />
+
+*Figure 11: New User **(Account Management)** activity*
+
 </details>
 
 <details>
