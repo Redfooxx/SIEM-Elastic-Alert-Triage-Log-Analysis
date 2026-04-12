@@ -77,9 +77,15 @@ The next critical alert in Fig. 10 (below) shows that the Administrator created 
 
 *Figure 10: SOC Alert: New User Account Created*
 
+Figure 11 (beloow) shows the activity of the newly created user account. Figure 12, after adjusting queries, showed the username of the account to be **svc_backup**.
+
 <img width="1450" height="562" alt="image" src="https://github.com/user-attachments/assets/6817adc1-7a32-47e8-89a6-eb0737181517" />
 
 *Figure 11: New User **(Account Management)** activity*
+
+<img width="1455" height="364" alt="image" src="https://github.com/user-attachments/assets/ee376cca-7ea9-4012-af0f-d6f53b31cae0" />
+
+*Figure 12: Name of the new user account*
 
 </details>
 
