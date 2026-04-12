@@ -91,7 +91,10 @@ Figure 11 (beloow) shows the activity of the newly created user account. Figure 
 
 <details>
   <summary><b>Exposing Command Execution</b></summary>
-  
-![image](https://github.com/user-attachments/assets/6575376c-19e0-4c1d-82cb-dafb87c154c2)
+
+  <img width="628" height="256" alt="image" src="https://github.com/user-attachments/assets/17d17151-bcb7-45fe-934f-d14e38b43ae0" />
+
+  *Figure 13: SOC Alert: Unusual Command-Line Behavior: Privilege Changes*
+
 
 </details>
