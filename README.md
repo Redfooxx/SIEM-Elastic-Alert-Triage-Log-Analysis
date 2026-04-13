@@ -92,9 +92,21 @@ Figure 11 (beloow) shows the activity of the newly created user account. Figure 
 <details>
   <summary><b>Exposing Command Execution</b></summary>
 
+  This next crticial alert (Fig. 13) flags suspicious command-line usage from the same Administrator account. 
+
   <img width="628" height="256" alt="image" src="https://github.com/user-attachments/assets/17d17151-bcb7-45fe-934f-d14e38b43ae0" />
 
   *Figure 13: SOC Alert: Unusual Command-Line Behavior: Privilege Changes*
+
+The first steps I did was to investigate what child process was launched by **cmd.exe** and to verify who launched it and why. Figure 14 (below) shows that the new account used the **net.exe** process to add the new account to three groups. 
+
+I confirmed that the Administrator used CMD to create a new user and modify security groups. However, I still need to determine whether the activity stopped there or continued using the newly created account. To do this, I’ll continue analyzing Sysmon logs and also review PowerShell logs for further evidence.
+
+  <img width="1454" height="463" alt="image" src="https://github.com/user-attachments/assets/cec9f98b-7a2b-4cc1-b99e-30bedac87a18" />
+
+  *Figure 14: New account added to three groups*
+
+
 
 
 </details>
