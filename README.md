@@ -77,7 +77,7 @@ The next critical alert in Fig. 10 (below) shows that the Administrator created 
 
 *Figure 10: SOC Alert: New User Account Created*
 
-Figure 11 (beloow) shows the activity of the newly created user account. Figure 12, after adjusting queries, showed the username of the account to be **svc_backup**.
+Figure 11 (below) shows the activity of the newly created user account. Figure 12, after adjusting queries, showed the username of the account to be **svc_backup**.
 
 <img width="1450" height="562" alt="image" src="https://github.com/user-attachments/assets/6817adc1-7a32-47e8-89a6-eb0737181517" />
 
@@ -92,7 +92,7 @@ Figure 11 (beloow) shows the activity of the newly created user account. Figure 
 <details>
   <summary><b>Exposing Command Execution</b></summary>
 
-  This next crticial alert (Fig. 13) flags suspicious command-line usage from the same Administrator account. 
+  This next criticial alert (Fig. 13) flags suspicious command-line usage from the same Administrator account. 
 
   <img width="628" height="256" alt="image" src="https://github.com/user-attachments/assets/17d17151-bcb7-45fe-934f-d14e38b43ae0" />
 
@@ -106,7 +106,16 @@ I confirmed that the Administrator used CMD to create a new user and modify secu
 
   *Figure 14: New account added to three groups*
 
+  After the initial breach, I observed the adversary performing Discovery and Enumeration via PowerShell (Fig. 15) The attacker executed a recursive search for all .xml files on the C:\ drive (dir /s /b C:\*.xml), a common technique used to locate configuration files containing plain-text credentials or sensitive system information."
 
+<img width="1455" height="586" alt="image" src="https://github.com/user-attachments/assets/01dad268-494b-425a-ab57-abe7e81eb893" />
 
+*Figure 15: Attacker searching the entire C: drive for every single .xml file*
+
+Figure 16 (below) shows that the attacker used **Rar.exe** to create an archive called **finance_it_archive.rar**. This is sufficient evidence to show that this alert is a true positive and should be escalated as the attacker may try to exfiltrate this data.
+
+<img width="1455" height="487" alt="image" src="https://github.com/user-attachments/assets/9ea8c3de-2f4c-4874-9e36-94422c000046" />
+
+*Figure 16: Attacker creates an archive named finance_it_archive.rar*
 
 </details>
